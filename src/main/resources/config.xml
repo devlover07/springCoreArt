@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:p="http://www.springframework.org/schema/p"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+  https://www.springframework.org/schema/beans/spring-beans.xsd">
+  
+  <!-- First bean with value TAG  -->
+  <bean class="com.springCoreGrp.springCoreArt.Student" name="student1">
+  
+  	<property name="studentId">
+  		<value>123456</value>
+  	</property>
+  	<property name="studentName">
+  		<value>Abhishek Singh</value>
+  	</property>
+  	<property name="studentAddress">
+  		<value>Bangaluru, India</value>
+  	</property>
+  	
+  </bean>
+  
+  <!-- second bean with value Attribute  -->
+  <bean class="com.springCoreGrp.springCoreArt.Student" name="student2">
+  
+  	<property name="studentId" value="98745" />
+  	
+  	<property name="studentName" value="Vivek Singh" />
+  	
+  	<property name="studentAddress" value="Rewa, MP" />
+  	
+  </bean>
+  
+  <!-- Third bean using P Schema  -->
+  
+  <bean class="com.springCoreGrp.springCoreArt.Student" name="student3" 
+  	p:studentId="456123" p:studentName="Shivek Singh" p:studentAddress="Not Known" />
+  
+  <!-- more bean definitions go here -->
+</beans>
